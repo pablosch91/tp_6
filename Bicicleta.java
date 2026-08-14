@@ -35,4 +35,9 @@ public class Bicicleta implements ImpactoEcologico {
     return litrosEquivalentes * factorCo2Gasolina * -1;
   }
 
+  @Override
+  public String identificar() {
+    return "Bicicleta [" + tipo + ", " + kilometrosRecorridos + " km]";
+  }
+
 }

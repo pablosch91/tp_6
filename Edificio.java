@@ -28,4 +28,10 @@ public class Edificio implements ImpactoEcologico {
   public double obtenerImpactoEcologico() {
     return consumoGasMensual * FACTOR_CO2_GAS;
   }
+
+  @Override
+  public String identificar() {
+    return "Edificio [" + nombre + ", " + metrosCuadrados + " m2]";
+  }
+
 }

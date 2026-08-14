@@ -13,22 +13,24 @@ public class Main {
 
     for (ImpactoEcologico item : lista) {
       System.out.printf("%s -> Impacto ecologico: %.2f kg de CO2%n",
-          identificar(item), item.obtenerImpactoEcologico());
+          item.identificar(), item.obtenerImpactoEcologico());
     }
   }
 
-  // Pregunto el tipo real del objeto para poder acceder a sus atributos propios
-  private static String identificar(ImpactoEcologico item) {
-    if (item instanceof Edificio) {
-      Edificio e = (Edificio) item;
-      return "Edificio [" + e.getNombre() + ", " + e.getMetrosCuadrados() + " m2]";
-    } else if (item instanceof Auto) {
-      Auto a = (Auto) item;
-      return "Auto [" + a.getModelo() + ", " + a.getKilometrosRecorridos() + " km]";
-    } else if (item instanceof Bicicleta) {
-      Bicicleta b = (Bicicleta) item;
-      return "Bicicleta [" + b.getTipo() + ", " + b.getKilometrosRecorridos() + " km]";
-    }
-    return "Desconocido";
-  }
+  // // Pregunto el tipo real del objeto para poder acceder a sus atributos propios
+  // private static String identificar(ImpactoEcologico item) {
+  //   if (item instanceof Edificio) {
+  //     Edificio e = (Edificio) item;
+  //     return "Edificio [" + e.getNombre() + ", " + e.getMetrosCuadrados() + " m2]";
+  //   } else if (item instanceof Auto) {
+  //     Auto a = (Auto) item;
+  //     return "Auto [" + a.getModelo() + ", " + a.getKilometrosRecorridos() + " km]";
+  //   } else if (item instanceof Bicicleta) {
+  //     Bicicleta b = (Bicicleta) item;
+  //     return "Bicicleta [" + b.getTipo() + ", " + b.getKilometrosRecorridos() + " km]";
+  //   }
+  //   return "Desconocido";
+  // }
+
+
 }

@@ -34,4 +34,9 @@ public class Auto implements ImpactoEcologico {
     return calcularLitrosConsumidos() * factorCo2Gasolina;
   }
 
+  @Override
+  public String identificar() {
+    return "Auto [" + modelo + ", " + kilometrosRecorridos + " km]";
+  }
+
 }
